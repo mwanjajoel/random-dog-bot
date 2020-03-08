@@ -16,8 +16,6 @@ Run the program using the following command.
 
 ` python main.py ` 
 
-
-
 ## How to use
 
 You can find the bot using this link: [RandomDogBot](https://t.me/DogRandomBot)
