@@ -10,7 +10,13 @@ Clone this repository, create your `virtualenv` and run the following commands
 
 ` pip install -r requirements.txt` 
 
+Copy the `.env-sample` file and create a new `.env` file. Insert the relevant details. 
+
+Run the program using the following command.
+
 ` python main.py ` 
+
+
 
 ## How to use
 
