@@ -28,6 +28,10 @@ def bop(update, context):
 
 def main():
     updater = Updater(os.getenv('BOT_TOKEN'), use_context=True)
+
+    updater.start_webhook(listen="0.0.0.0", port=8443, url_path=os.getenv('BOT_TOKEN'))
+    updater.bot.set_webhook(os.getenv('HEROKU_APP_NAME') + os.getenv('BOT_TOKEN'))
+    
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('bop', bop))
     updater.start_polling()
