@@ -6,6 +6,12 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
+# Enable logging
+logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                    level=logging.INFO)
+
+logger = logging.getLogger(__name__)
+
 # access the API and get the image URL
 def get_url():
     contents = requests.get('https://random.dog/woof.json').json()
