@@ -22,3 +22,5 @@ You can find the bot using this link: [RandomDogBot](https://t.me/DogRandomBot)
 
 Simply send the `/bop` command to it to get a random image of a dog. 
 
+Made in the Pearl of Africa 🇺🇬
+
