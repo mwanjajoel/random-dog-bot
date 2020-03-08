@@ -2,6 +2,7 @@
 from telegram.ext import Updater, CommandHandler
 import requests
 import re
+import os
 from dotenv import load_dotenv
 load_dotenv()
 
