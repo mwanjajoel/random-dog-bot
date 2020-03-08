@@ -2,6 +2,8 @@
 from telegram.ext import Updater, CommandHandler
 import requests
 import re
+from dotenv import load_dotenv
+load_dotenv()
 
 # access the API and get the image URL
 def get_url():
