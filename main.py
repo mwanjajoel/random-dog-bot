@@ -3,6 +3,7 @@ from telegram.ext import Updater, CommandHandler
 import requests
 import re
 import os
+import logging
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -20,10 +21,10 @@ def get_url():
     return image_url
 
 # function to return the image to the sender 
-def bop(bot, update):
+def bop(update, context):
     url = get_url()
     chat_id = update.message.chat_id
-    bot.send_photo(chat_id=chat_id, photo=url)
+    context.bot.send_photo(chat_id=chat_id, photo=url)
 
 def main():
     updater = Updater(os.getenv('BOT_TOKEN'), use_context=True)
